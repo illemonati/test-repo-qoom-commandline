@@ -1,0 +1,12 @@
+/*===========================
+	LOGIN PAGE CSS
+===========================*/
+
+.container {
+	max-width: 640px;
+}
+
+
+.password-reset {
+	text-align: right;
+}

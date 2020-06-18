@@ -1,0 +1,42 @@
+<header>
+	<div class="qoom-navibar">
+        <div class="navibar-container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="/home">
+                            <img src="/libs/lander/assets/images/logo.svg" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFive" aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarFive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item one"><a class="page-scroll" href="/home">Home</a></li>
+                                <li class="nav-item two"><a class="page-scroll" href="/pricing">Pricing</a></li>
+								<!-- <li class="nav-item three"><a class="page-scroll" href="/help">Help Center</a></li> -->
+                                <li class="nav-item four"><a class="page-scroll" href="/contactus">Contact</a></li>
+                                <li class='nav-item navbar-btn login'><a class="light" href="/subscribe/login">Log In</a></li>
+                                <li class='nav-item navbar-btn signup'><a class="solid" href="/pricing">Get Started</a></li>
+                            </ul>
+                        </div>
+                        <div class='navbar-loggedin'> 
+                        	<ul>
+                        		<li><a><div class='loggedin-avatar-img'></div></a></li>
+                        		<li>
+                        			<a><span class='loggedin-username'>{{subscriberData.first}}</span></a>
+                            		<ul class="sub-menu">
+                                        <li class='nav-item myqoom'><a href="/account/codingspaces">MY ACCOUNT</a></li>
+                                        <li id="logOutBtn" class='nav-item logout'><a>LOGOUT</a></li>
+                                    </ul>
+                                </li>
+                        	</ul>
+                        </div> 
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div>
+</header>

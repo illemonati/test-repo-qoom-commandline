@@ -1,0 +1,26 @@
+{
+	"name": "unpublish_app",
+	"requiresAuth": true,
+	"steps": [
+		{
+			"name": "remove_from_file",
+			"description": "Removes the app from the file",
+			"app": "publisher",
+			"method": "removeFromFile"
+		},
+		{
+			"name": "update_app",
+			"description": "Updates the app with published file details",
+			"app": "apper",
+			"method": "markNotPublished"
+		}
+	],
+	"flow": [
+		{
+			"step": "remove_from_file"
+		},
+		{
+			"step": "update_app"
+		}
+	]
+}

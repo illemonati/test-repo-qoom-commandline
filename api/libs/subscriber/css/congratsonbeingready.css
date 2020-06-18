@@ -1,0 +1,55 @@
+.header {
+	margin-top: 80px;
+}
+.header .row {
+	max-width:640px;
+	margin: 0 auto;
+}
+ 
+.header .row .page-title {
+	text-align: center; 
+} 
+
+/*LOGIN AREA STYLE*/
+
+.signin-area {
+	padding-top: 20px;
+	background-color: #fff;
+}
+
+.contents-body-text {
+	text-align: center;
+	margin-top: 24px;
+}
+
+.button-container {
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 15px;
+}
+
+#goToAdmin {
+	width: 480px;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header {
+		margin-top: 40px;
+	}
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	.contents-body-text {
+		text-align: left;
+	}
+	#goToAdmin {
+		width: 100%;
+	}
+}

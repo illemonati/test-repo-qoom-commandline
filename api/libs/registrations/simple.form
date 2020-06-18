@@ -1,0 +1,49 @@
+# HERE IS SOME HTML
+
+## Form Elements
+
+`!!a(column_header) placeholder`
+!!a(column_header) placeholder
+
+`!!a(column_header) placeholder`
+!!a(column_header) placeholder
+
+`!!t(column_header) placeholder*`
+(adding a `*` after placeholder makes it required)
+!!t(column_header) required*
+
+`!!e(column_header) email*`
+(adding a `*` after placeholder makes it required)
+!!e(column_header) required*
+
+`!!$ 1800`
+!!$ 1800
+
+`!!c(column_header) label 1, label 2` (Not done yet)
+!!c(column_header) label 1
+!!c(column_header) label 2
+
+`!!r(column_header) label 1, label 2` (Not done yet)
+!!r(column_header) label 1
+!!r(column_header) label 2
+
+`!!s(column_header) label 1, label 2` (Not done yet)
+!!s(column_header) label 1, label 2
+
+`!!b(/survey/checkout) Button Name`
+!!b(/survey/checkout) Button Name
+
+Hidden Field for Survey Name <br>
+`!!h(survey) Vobyus and Deftsign Spring 2020`
+
+Email template to send to the person who submitted survey<br>
+`!!h(template) registrations/submission.email`
+
+Email Subject<br>
+`!!h(subject) Thank you for registering`
+
+Where to go after clicking the button<br>
+`!!h(redirecturl) /registrations/form-thankyou.html`
+
+Adding a description of this form<br>
+`!!h(description) Qoom Entrepreneurial Class Registration`

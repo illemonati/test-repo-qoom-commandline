@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Viewer</title>
+	<style>
+		{{BASECSS}}
+		{{STYLES}}
+		{{SECTIONCSS}}
+	</style>
+</head>
+<body>
+	{{MENU}}
+	{{HEADER}}
+	<main>
+		<div id='controls'>
+			<select id='collections'>
+				<option id='nooption'>-- Select --</option>
+			</select>
+			<input type='text' id='command'>
+			<a id='create' target='_blank'>Create</a>
+		</div>
+		<div id='table'></div>
+	</main>
+	{{FOOTER}}
+	<script src='/libs/viewer/tabled.js'></script>
+	<script>
+		{{BASEJS}}
+		{{SECTIONJS}}
+		{{SCRIPT}}
+	</script>
+</body>
+</html>

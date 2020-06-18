@@ -1,0 +1,70 @@
+.header-content-area {
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+	height: 90vh;
+} 
+
+.header-content-area .container .header-wrapper .header-content .header-slides {
+	display: block;
+}
+
+.header-content {
+	padding-top: 0;
+    max-width: 560px;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.header-content .header-slides .header-title {
+	margin-bottom: 1rem;
+}
+
+.header-content .header-slides .text {
+	margin-bottom: 1rem;
+}
+
+.header-content .header-slides .partnership-benefits {
+	margin-bottom: 1rem;
+	list-style-type: disc;
+}
+
+.header-content .header-slides .partnership-benefits .benefit {
+	color: #0067f4;
+}
+
+.header-wrapper .header-btn {
+	position: relative;
+}
+
+.header-image {
+	position: absolute;
+	right: 0.5rem;
+	top: 2rem;
+	z-index: 5;
+}
+
+.header-image .image {
+	max-width: 640px;
+	text-align: center;
+}
+
+.header-image .image img {
+	width: 80%;
+}
+
+@media (max-width: 768) {
+	.header-content-area {
+		height: fit-content;
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 414px) {
+	.header-content-area {
+		height: fit-content;
+		margin-top: 80px;
+	}
+}

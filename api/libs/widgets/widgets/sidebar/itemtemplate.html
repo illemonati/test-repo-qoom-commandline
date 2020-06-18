@@ -1,0 +1,10 @@
+<div class='domain-item {{isselected}}'>
+	<div class="item-name menu-item" onclick="location.href='/account/{{_id}}/codingspaces'">
+		<div class='item-icon'><span class="icon-initial">{{initial}}</span></div>
+		<div>{{name}}</div>
+	</div>
+	<div class="domain-submenu">
+		<div id="codingspaces" class="menu-item {{codingSpacesSelected}}" onclick="location.href='/account/{{_id}}/codingspaces'">Coding Spaces</div>
+		<div id="subscription" class="menu-item {{subscriptionSelected}}" onclick="location.href='/account/{{_id}}/subscription'">Subscription</div>
+	</div>
+</div>

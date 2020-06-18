@@ -1,0 +1,168 @@
+/*MAIN CONTAINER STYLE*/
+.container {
+	max-width: 640px;
+}
+
+.header {
+	margin-top: 80px;
+}
+
+.header .row {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.header .row .page-title {
+	text-align: center;
+}
+
+.signin-area {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+.signin-one .form-input .text, .signin-two .form-input .text {
+	font-size: 0.75rem;
+}
+
+.form-input .input-items input, .form-input .input-items textarea {
+	font-size: 0.75rem;
+}
+
+.invite-member-title {
+	color: #0067f4;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.member-container .row {
+	margin-top: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.member-index-container {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #0067f4;
+	margin: 10px 8px;
+}
+
+.member-info-container {
+	width: calc(100% - 40px);
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.member-info-container .error {
+	border-color: #fc3832;
+}
+
+.member-index-number {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	color: #fff;
+}
+
+.club-member-name {
+	width: calc(40% - 10px);
+	margin-right: 10px;
+}
+
+.club-member-email {
+	width: 60%;
+}
+
+.form-input .input-items input
+, .form-input .input-items textarea
+, .form-input .input-items p {
+	display: inline-block;
+}
+
+.form-style-two .form-input .input-items i {
+	left: 13px;
+	right: auto;
+}
+
+.form-style-two .form-input .input-items input {
+	padding-right: 12px;
+	padding-left: 44px;
+}
+
+[type=button]:disabled, [type=reset]:disabled, [type=submit]:disabled, button:disabled {
+	cursor: default;
+	background-color: #666666;
+	border-color: #666666;
+	color: #fff;
+}
+
+[type=button]:disabled:hover, [type=reset]:disabled:hover, [type=submit]:disabled:hover, button:disabled:hover {
+	color: #fff;
+	background-color: #666666;
+	border-color: #666666;
+}
+
+
+.signin-area .container .signin-form .row .send-invitation-button {
+	margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+	
+	.header {
+		margin-top: 24px;
+		padding: 10px;
+	}
+	
+	.container {
+		width: 100%;
+		padding: 10px;
+		margin-top: 0;
+	}
+	
+	.signin-area {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	
+	.invite-member-title {
+		margin-top: 24px;
+	}
+	
+	.member-index-container {
+		margin: 10px 8px 10px 0;
+	}
+	
+	.member-info-container {
+		flex-wrap: wrap;
+		width: calc(100% - 32px);
+	}
+	
+	.club-member-name {
+		width: 100%;
+		margin-bottom: 8px;
+		margin-right: 0;
+	}
+	
+	.club-member-email {
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	.signin-area .container .signin-form .row .send-invitation-button {
+		margin-top: 30px;
+
+	}
+	
+
+}

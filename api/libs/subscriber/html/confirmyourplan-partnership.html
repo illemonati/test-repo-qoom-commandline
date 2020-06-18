@@ -1,0 +1,226 @@
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+	const subscriberPlans = {
+		monthly: "{{monthlyId}}"
+		, yearly: "{{yearlyId}}"
+	}
+</script>
+<section class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 page-title">
+           <h1>Confirm Your Plan</h1> 
+        </div>
+    </div>
+	<div class="confirm-container">
+		<div class="left-container">
+		<div class="subcontainer your-plan">
+			<h5 class="title">1. Your Plan</h5>
+		    <div class="details">
+		        <table>
+		        	<tr class="domain first-text-line">
+		        		<td>
+		        			<p>Domain - <span class="domain-name">{{domainName}}</span></p>
+		    			</td>
+		        		<td><span class="domain-price dollar">{{domainPrice}}</span>&nbsp;<span class="price-unit">/ year</span></td>
+		        	</tr>
+		        	<tr class="domain description">
+		        		<td>
+		        			<ul>
+		        				<li>Privacy protection is included</li>
+		        				<li>This domain will be auto-renewed around <span class='autorenewdate'></span> every year</li>
+		        			</ul>
+		        		</td>
+		        	</tr>
+		        	<tr class="empty-row"></tr>
+		        	<tr class="annual-info-container annual-info first-text-line">
+		        		<td><p>{{annualName}}</p></td>
+		        		<td><span class="subscription-price dollar"> {{yearlyPrice}}</span>&nbsp;<span class="price-unit">/ year</span></td>
+		        	</tr>
+		        	<tr class="monthly-info-container monthly-info first-text-line">
+		        		<td><p>{{monthlyName}}</p></td>
+		        		<td><span class="subscription-price dollar"> {{monthlyPrice}}</span>&nbsp;<span class="price-unit">/ month</span></td>
+		        	</tr> 
+		        	<tr>
+		        		<td class="toggle-container">
+		        			<input id="toggleSwitch" type="checkbox" class="toggle-switch" name ='toggleSwitch' checked>
+		        			<span class="annual-info">Annual (${{yearlyPriceByMonthlyPay}}/month)</span>
+		        			<span class="monthly-info">Monthly (${{monthlyPrice}}/month)&nbsp;&nbsp;<span class="promote-text">Save ${{differenceOfValue}} with annual payment</span></span>
+	        			</td>
+		        	</tr> 
+		        	<tr class="annual-info description">
+		        		<td><ul><li>Your plan will be auto-renewed around <span class='autorenewdate'></span> every year</li></ul></td>
+		        	</tr>
+		        	<tr class="monthly-info description">
+		        		<td><ul><li>Your plan will be auto-renewed around <span class='autorenewday'></span> every month</li></ul></td>
+		        	</tr>
+		        </table>
+		    </div>
+		</div>
+		<div class="subcontainer">
+			<h5 class="title">2. Contact Information</h5>
+			<p class="subtitle">This information is required by ICANN in order to reach you in case of problems with your domain registration.</p>
+            <div class="row">
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>First Name*</label>
+	                    <div class="input-items default">
+	                        <input type="text" placeholder="" value="{{firstname}}" required id='first' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >   
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>Last Name*</label>
+	                    <div class="input-items default">
+	                        <input type="text" placeholder="" value="{{lastname}}"  required id='last' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-12">
+	                <div class="form-input">
+	                    <label>Organization (Optional)</label>
+	                    <div class="input-items-optional default">
+	                        <input type="text" placeholder="" id='organization' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-12">
+	                <div class="form-input">
+	                    <label>Street Name*</label>
+	                    <div class="input-items default empty">
+	                        <input type="text" placeholder="" required id='addressOne' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-12">
+	                <div class="form-input">
+	                    <label>Apartment, building, floor, etc. (Optional)</label>
+	                    <div class="input-items-optional default">
+	                        <input type="text" placeholder="" required id='addressTwo' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>City*</label>
+	                    <div class="input-items default empty">
+	                        <input type="text" placeholder="" required id='city' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>State / Province / Region*</label>
+	                    <div class="input-items default empty">
+	                        <input type="text" placeholder="" required id='state' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>Country</label>
+	                    <div class="input-items default">
+	                    	<select id='country'>
+								<option value="US">United States</option>
+								<option value="KR">South Korea</option>
+							</select>
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-6">
+	                <div class="form-input">
+	                    <label>Zip*</label>
+	                    <div class="input-items default empty">
+	                        <input type="text" placeholder="" required id='zip' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	            <div class="col-lg-12">
+	                <div class="form-input">
+	                    <label>Phone*</label>
+	                    <div class="input-items default empty">
+	                        <input type="text" placeholder="" required id='phone' data-pattern='^[A-Za-z0-9_-\s\#\.]+$ ' >
+	                    </div>
+	                </div> <!-- form input -->
+	            </div>
+	        </div>
+		</div>
+		<div class="subcontainer payment-details">
+			<h5>3. Payment Details</h5>
+			<div class="details">
+				<form action="/charge" method="post" id="payment-form">
+					<div class="row">
+						<div class="col-lg-12 form-input">
+							<label>Credit Card</label>
+							<div id="card-element">
+							<!-- A Stripe Element will be inserted here. -->
+							</div>
+						
+							<!-- Used to display Element errors. -->
+							<div id="card-errors" role="alert"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+		<div class="right-container">
+			<div class="subcontainer order-details">
+		    	<h5>Order Details</h5>
+		    	<div class="details">
+		            <table>
+		            	<tr class="first-text-line">
+		            		<td>Domain - {{domainName}}</td>
+		            		<td><span class="domain-price dollar">{{domainPrice}}</span></td>
+		            	</tr>
+		            	<tr class="renew-info">
+		            		<td>Renew around <span class='autorenewdate'></span> every year</td>
+		            	</tr>
+		            	<tr class="first-text-line">
+		            		<td><span class="annual-info">{{annualName}}</span><span class="monthly-info">{{monthlyName}}</span></td>
+		            		<td>
+		            			<span class="annual-info annual-price dollar">{{yearlyPrice}}</span>
+		            			<span class="monthly-info monthly-price dollar">{{monthlyPrice}}</span>
+		            		</td>
+		            	</tr>
+		            	<tr class="renew-info">
+		            		<td>Renew around 
+	            				<span class="annual-info"><span class='autorenewdate'></span> every year</span>
+	            				<span class="monthly-info"><span class='autorenewday'></span> every month</span>
+		            		</td>
+		            	</tr>
+		            </table>
+		    	</div>
+		    	<div class="total-amount-container">
+		    		<div>Due Today:</div>
+		    		<div>
+		    			<span class="total-amount annual-info dollar"></span>
+		    			<span class="total-amount monthly-info dollar"></span>
+		    		</div>
+		    	</div>
+			    <div class="checkout-checkbox">
+			        <ul class="checkbox_common" id='tacs'>
+			            <li>
+			                <input type="checkbox" id="checkbox1">
+			                <label for="checkbox1">I agree to the Qoom <a href="/terms-of-service" target="_blank">Terms of Service</a> and <a href="/privacy" target="_blank">Privacy Policy</a>.</label>
+			            </li>
+			        </ul>
+			    </div>
+			    <div class="agreement">
+			    	By clicking the button "Confirm" below, you agree to the total price of <span class="total-amount annual-info dollar"></span><span class="total-amount monthly-info dollar"></span> now with automatic
+				    charges of ${{domainPrice}} each year starting on 
+				    <span class='autorenewdate'></span> for domain name and 
+				    <span class="annual-info"> ${{yearlyPrice}}</span> each year
+				    starting on
+				    <span class='autorenewdate'></span>
+				    <span class="monthly-info"> ${{monthlyPrice}}</span> each month starting on 
+				    <span class='autorenewday'></span> until you cancel.
+				</div>
+				<div class="checkout-btn">
+					<button id="confirmSubscriptionBtn" class="qoom-main-btn qoom-button-full" type="submit">CONFIRM</button>
+					<input type='hidden' value='{{domainName}}' id='domainname'>
+				</div>
+		    </div>
+		</div>
+	</div>
+</section>

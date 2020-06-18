@@ -1,0 +1,20 @@
+<div class='menubar-background'></div>
+<nav class='menubar'>
+	<div class='logo' onclick="location.href='/'"><i class="ic-qoom primary"></i></div>
+	<div class='menu-header'>👋 Hi, <span class='user-name'>{{firstName}}</span></div>
+	<div class='domains'>
+		<div class='title'>My Domains</div>
+		<div class='domains-list'>
+			{{ITEMS}}
+		</div>
+	</div>
+	<div class="menu-item">
+		<div class="{{accountsettingsSelected}}" onclick="location.href='/account/accountsettings'" ><i class="ic-settings gray-400"></i>Account Settings</div>
+	</div>
+	<div class="menu-item">
+		<div onclick="location.href='/contactus'"><i class="ic-mail"></i>Contact Us</div>
+	</div>
+	<div id="log-out-btn" class="menu-item">
+		<div class="log-out"><i class="ic-arrow-out"></i>Log Out</div>
+	</div>
+</nav>

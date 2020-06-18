@@ -1,0 +1,134 @@
+.container {
+	max-width: 920px;
+}
+.table-container {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 16px;
+	font-weight: 300;
+}
+.table-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table-container table tr {
+	border-bottom: 1px solid var(--color-gray-100);
+}
+.table-container table thead tr {
+	border-bottom: 1px solid var(--color-primary);
+}
+.table-container table th {
+	color: var(--color-primary);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 8px 16px;
+	text-align: left;
+}
+.table-container table td {
+	font-weight: 300;
+	padding: 16px 0 16px 16px;
+	text-align: left;
+}
+
+.table-container table .name {
+	width: 30%;
+}
+
+.table-container table .url {
+	width: 50%;
+}
+.table-container table .edit
+,.table-container table .delete {
+	color: var(--color-primary);
+	cursor: pointer;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 10%;
+}
+.table-container .edit:hover span
+,.table-container .delete:hover span {
+	text-decoration: underline;
+}
+
+#addMember {
+	text-align: center;
+	color: var(--color-primary);
+}
+
+#addMember:hover {
+	cursor: pointer;
+	background-color: var(--color-gray-10);
+}
+
+#addMember i {
+	width: 24px;
+	height: 24px;
+	margin-right: 16px;
+	vertical-align: middle;
+}
+
+.button-area {
+	margin-top: 64px;
+	text-align: center;
+}
+
+#editModal {
+	display: none;
+}
+#addNewModal {
+	display: none;
+}
+
+.modal .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.modal .col-lg-6
+,.modal .col-lg-12 {
+	padding: 0 7.5px;
+}
+
+.modal .buttons-container {
+	margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 100vw;
+		padding: 40px 16px;
+	}
+
+	.table-container table th{
+		display: none;
+	}
+	.table-container table tr {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 12px 0 8px;
+		vertical-align: middle;
+	}
+	.table-container table td {
+		padding: 6px 0;
+	}
+	.table-container table .name {
+		font-weight: 400;
+		width: 100%;
+	}
+	
+	.table-container table .url {
+		width: 100%;
+	}
+	
+	.table-container table .edit
+	.table-container table .delete {
+		width: 50%;
+		border-bottom: 1px solid var(--color-gray-100);
+	}
+}
+@media (max-width: 577px)
+	.col-lg-4 {
+		flex: 0 0 30%;
+	}
+}

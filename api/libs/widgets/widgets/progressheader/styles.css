@@ -1,0 +1,118 @@
+/*STYLE FOR PROGRESS BAR : STEP 1*/
+header {
+	background-color: var(--text-dark-high);
+}
+.navibar {
+	color: #fff;
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 14px 16px;
+}
+
+.navibar-cancel {
+	cursor: pointer;
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 8px 16px 8px 8px;
+	width: 120px;
+	-webkit-transition: all 0.4s ease-out 0s;
+	-moz-transition: all 0.4s ease-out 0s;
+	-ms-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+	z-index: 99;
+}
+.navibar-cancel:hover {
+	background-color: rgba(255,255,255,0.12);
+	border-radius: 4px;
+}
+
+.cancel-button {
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+.cancel-text {
+	line-height: 32px;
+	text-transform: uppercase;
+}
+
+.navibar-title {
+	flex: 1 1 auto;
+	margin-left: -120px;
+	padding: 8px 0;
+	text-align: center;
+}
+
+.progress-status div {
+	border: 1px solid #fff;
+	width: 32px;
+	height: 32px;
+	font-size: 16px;
+	line-height: 32px;
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 64px;
+	position: relative;
+}
+.progress-status div:after {
+	content: "";
+	width: 65px;
+	height: 1px;
+	border-top: 2px dotted #fff;
+	position: absolute;
+	left: 32px;
+	top: 16px;
+}
+.progress-status div:last-child {
+	margin-right: 0;
+}
+.progress-status div:last-child:after {
+	margin-right: 0;
+	width: 0;
+}
+
+.first.progress-status div:first-child {
+	background-color: #fff;
+	color: var(--text-dark-high);
+	border: 1px solid var(--text-dark-high);
+}
+
+.second.progress-status div:nth-child(2) {
+	background-color: #fff;
+	color: var(--text-dark-high);
+	border: 1px solid var(--text-dark-high);
+}
+
+.third.progress-status div:last-child {
+	background-color: #fff;
+	color: var(--text-dark-high);
+	border: 1px solid var(--text-dark-high);
+}
+
+@media (max-width: 991px) {
+	.navibar {
+		padding: 6px 8px;
+	}
+	.cancel-button {
+		margin-right: 4px;
+	}
+	.cancel-text {
+		font-size: 14px;
+	}
+	.progress-status div {
+		margin-right: 24px;
+	}
+	.progress-status div:after {
+		width: 25px;
+	}
+}
+
+@media (max-width: 577px) {
+	.cancel-text {
+		display: none;
+	}
+}

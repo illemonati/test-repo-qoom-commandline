@@ -1,0 +1,54 @@
+<style>
+	h1:before {
+	    background: url(https://www.applied-computing.org/libs/landing/assets/icons/acf_navy_big.png);
+	    filter: none;
+	    height: 45px;
+	    width: 200px;
+	    background-size: cover;
+	}
+</style>
+
+# Entrepreneurial Class Registration: Vobyus and Deftsign
+
+## Hello Everyone!
+
+Thank you for your continued support. We really enjoy supporting Deftsign and Vobyus. As we discussed earlier,
+I would like to increase the number of times we meet in order
+to better empower the students for next school year's competitions. 
+
+## Schedule
+
+Next session will start sometime during the week of **4/19** based
+on the feedback concerning what times work best for everyone. 
+The session will end 14 weeks later sometime in the week of **7/19**. If during the summer
+we are able to meet again in person at the studio. we can revisit the schedule.
+
+### Time Slot 1 (1½ hours)
+
+Time for students to plan for the week as well as to work together on their
+project. The coach will focus on teaching the students new things as needed.
+!!a(slot1) Please list what days of the week and hours the student is available*
+
+### Time Slot 2 (1 hour)
+Time for the students check-in in what work they have done as well as time to 
+get help on what they are stuck on. 
+!!a(slot2) Please list what days of the week and hours the student is available*
+ 
+### Time Slot 3 (½ hour)
+Time for students to present to parents and one another the progress that has 
+been made as well the plan moving forward.
+!!a(slot3) Please list what days of the week and hours the student and parents are available*
+
+### Your email address:
+!!e(email) Enter Email*
+
+### Credit card
+!!$ 1800
+
+!!b(/survey/checkout) Register Now
+
+!!h(survey) Vobyus and Deftsign Spring 2020
+!!h(template) registrations/submission.email
+!!h(subject) Thank you for registering
+!!h(redirecturl) /registrations/form-thankyou.html
+!!h(description) Qoom Entrepreneurial Class Registration

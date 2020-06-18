@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Toggle Switches</title>
+        <link rel="stylesheet" href="toggle-switches.css">
+        <style>
+			input[type=checkbox].toggle-switch {
+			    appearance: none;
+			    -moz-appearance: none;
+			    -webkit-appearance: none;
+			    width: 6rem;
+			    height: 3rem;
+			    border-radius: 3rem;
+			    background-color: #ddd;
+			    outline: 0;
+			    cursor: pointer;
+			    transition: background-color 0.09s ease-in-out;
+			    position: relative;
+			}
+			
+			input[type=checkbox].toggle-switch:checked {
+			    background-color: #0067f4;
+			}
+			
+			input[type=checkbox].toggle-switch::after {
+			    content: '';
+			    width: 3rem;
+			    height: 3rem;
+			    background-color: white;
+			    border-radius: 3rem;
+			    position: absolute;
+			    transform: scale(0.7);
+			    left: 0;
+			    transition: left 0.09s ease-in-out;
+			}
+			
+			input[type=checkbox].toggle-switch:checked::after {
+			    left: 3rem;
+			}
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" class="toggle-switch" checked>
+    </body>
+</html>

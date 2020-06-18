@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap&subset=latin-ext');
+
+/* Typographic Scale */
+body {
+	color: #333333;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+h1, .wisen-text-h1{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 6rem;
+	font-weight: 400;
+	letter-spacing: -1.5;
+	margin-block-start: 3rem;
+	margin-block-end: 3rem;
+
+}
+h2, .wisen-text-h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 5rem;
+	font-weight: 400;
+	letter-spacing: -0.5;
+	margin-block-start: 2.5rem;
+	margin-block-end: 2.5rem;
+}
+
+h3, .wisen-text-h3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+	margin-block-start: 1.5rem;
+	margin-block-end: 1.5rem;
+}
+
+h4, .wisen-text-h4 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 0.25;
+	margin-block-start: 1rem;
+	margin-block-end: 1rem;
+}
+
+h5, .wisen-text-h5 { 
+	font-size: 1.5rem; /* 24px when the base font-size is 16px */
+	font-weight: 400;
+	margin-block-start: 0.75rem;
+	margin-block-end: 0.75rem;
+}
+
+h6, .wisen-text-h6 { /* 20px when the base font-size is 16p */
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-block-start: 0.625rem;
+	margin-block-end: 0.625rem;
+}
+
+.wisen-text-subtitle-1 {
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.15;
+	margin-block-start: 0.5rem;
+ 	margin-block-end: 0.5rem;
+}
+
+.wisen-text-subtitle-2 {
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 0.1;
+	margin-block-start: 0.5rem;
+	margin-block-end: 0.5rem;
+}
+
+.wisen-text-body-1 {
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 0.5;
+	margin-block-start: 0.5rem;
+	margin-block-end: 0.5rem;
+}
+
+.wisen-text-body-2 {
+	font-size: 0.875rem;
+	font-weight: 400;
+	letter-spacing: 0.25;
+	margin-block-start: 0.5rem;
+	margin-block-end: 0.5rem;
+}
+
+.wisen-text-button {
+	font-size: 0.875srem;
+	font-weight: 600;
+	letter-spacing: 1.25;
+	text-transform: uppercase;
+}
+
+.wisen-text-caption {
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 0.4;
+	margin-block-start: 0.375rem;
+	margin-block-end: 0.375rem;
+}
+
+.wisen-text-overline {
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 2;
+	margin-block-start: 0.375rem;
+	margin-block-end: 0.375rem;
+	text-transform: uppercase;
+}
+
+/* Color Palette*/
+
+.wisen-bg-white {
+	background-color: #ffffff;
+}
+.wisen-bg-light {
+	background-color: #f5f5f5;
+}
+.wisen-bg-black {
+	background-color: #333333;
+}
+
+.wisen-black-text {
+	color: #333333;
+}
+.wisen-black-text-medium {
+	color: #666666;
+}
+.wisen-black-text-disabled {
+	color: #999999;
+}
+
+.wisen-white-text {
+	color: #ffffff;
+}
+.wisen-white-text-medium {
+	color: #ffffff80;
+}
+.wisen-white-text-disabled {
+	color: #ffffff40;
+}
+
+.wisen-color-primary, .wisen-color-purple {
+	color: #64107e; /* purple 800 */
+}
+
+.wisen-bg-color-primary, .wisen-bg-color-purple {
+	background-color: #64107e;
+}
+
+.wisen-color-primary-dark, .wisen-color-purple-dark{
+	color: #48096f; /* purple 900 */
+}
+
+.wisen-bg-color-primary-dark, .wisen-bg-color-purple-dark{
+	background-color: #48096f;
+}
+
+.wisen-color-primary-light, .wisen-color-purple-light {
+	color: #911d94; /* purple 500 */
+}
+
+.wisen-bg-color-primary-light, .wisen-bg-color-purple-light {
+	background-color: #911d94;
+}
+
+.wisen-color-primary-lightest, .wisen-color-purple-lightest {
+	color: #F2E3F1; /* purple 50 */
+}
+
+.wisen-bg-color-primary-lightest, .wisen-bg-color-purple-lightest {
+	background-color: #F2E3F1;
+}
+
+.wisen-color-orange {
+	color: #FB8B24;
+}
+
+.wisen-bg-color-orange {
+	background-color: #FB8B24;
+}
+
+.wisen-color-blue {
+	color: #05668D;
+}
+
+.wisen-bg-color-blue {
+	background-color: #05668D;
+}
+
+.wisen-color-pink {
+	color: #D81159;
+}
+
+.wisen-bg-color-pink {
+	background-color: #D81159;
+}
+
+.wisen-color-green {
+	color: #04A777;
+}
+
+.wisen-bg-color-green {
+	background-color: #04A777;
+}

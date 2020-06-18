@@ -1,0 +1,343 @@
+/*NAVIBAR STYLE*/
+.navibar {
+	padding: 30px 10px;
+	background-color: #000;
+	color: #fff;
+}
+
+.navibar-cancel {
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+}
+
+.navibar-cancel-button {
+	margin-right: 5px;
+}
+
+.navibar-cancel-button svg {
+	padding-bottom: 1px;
+}
+
+.navibar-title {
+	width: 100%;
+	text-align: center;
+}
+
+.progress-status div {
+	width: 32px;
+	height: 32px;
+	font-size: 1.5rem;
+	line-height: 32px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.progress-status .third-step {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.progress-status .first-step,
+.progress-status .second-step {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.progress-status .first-step,
+.progress-status .second-step {
+	margin-right: 64px;
+	position: relative;
+}
+
+.progress-status .first-step:after,
+.progress-status .second-step:after {
+	content: "";
+	width: 65px;
+	height: 1px;
+	border-top: 2px dotted #fff;
+	position: absolute;
+	left: 32px;
+	top: 16px;
+}
+
+/*CHECKOUT STYLE*/
+.container {
+	max-width: 640px;
+}
+
+.header {
+	margin-top: 80px;
+}
+
+.header .row {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.header .row .page-title {
+	text-align: center;
+}
+
+
+/*CHECKOUT INFO STYLE*/
+.checkout-subtext {
+	margin-top: 50px;
+}
+
+.checkout-subtext ul li i {
+	margin-right: 5px;
+}
+
+/*SELECT PAYMENT OPTION SECTION STYLE*/
+.select-payment-option {
+	margin-top: 60px;
+}
+
+.club-price-option-monthly
+, .club-price-option-annual {
+	min-height: 96px;
+	width: 100%;
+	border: 1px solid #cdced1;
+	display: flex;
+	align-items: center;
+}
+
+.club-price-option-monthly .club-price-option-header,
+.club-price-option-annual .club-price-option-header {
+	width: 140px;
+}
+
+.club-price-option-monthly .club-price-option-header p,
+.club-price-option-annual .club-price-option-header p {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.club-price-option-monthly .club-price-option-price,
+.club-price-option-annual .club-price-option-price {
+	padding: 5px 0;
+}
+
+.club-price-option-monthly .club-price-option-price span,
+.club-price-option-annual .club-price-option-price span {
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.club-price-option-annual .club-price-option-price .saving-subtext {
+	display: block;
+	color: #0067f4;
+}
+
+.club-price-option-annual .club-price-option-price .discounted-pay-in-full-price {
+	color: #0067f4;
+}
+
+.club-price-option-annual .club-price-option-price p {
+	display: inline;
+}
+
+.club-price-option-annual .club-price-option-price .original-pay-in-full-price {
+	font-size: 0.75rem;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.club-price-option-monthly .club-price-option-price > span
+, .club-price-option-annual .club-price-option-price > span {
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #666666;
+}
+ 
+.club-price-option-monthly .select-button
+, .club-price-option-annual .select-button {
+	text-align: right;
+}
+
+
+.club-price-option-monthly .select-button button
+, .club-price-option-annual .select-button  button {
+	width: 120px;
+	padding: 0 16px;
+	position: relative;
+}
+
+.selected {
+	border: 3px solid #0067f4;
+}
+
+.selected .select-button button:after {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #0067f4;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	content: '✓';
+	font-size: 20px;
+}
+
+.checkout-title .title {
+	margin-bottom: 1rem;
+}
+
+/*PAYMENT SECTION STYLE*/
+.checkout-payment {
+	border-top: none;
+}
+
+.form-input .input-items input, .form-input .input-items textarea {
+	font-size: 0.75rem;
+}
+
+.checkout-btn {
+	border-top: none;
+}
+
+.extra-small-paragraph p {
+	font-size: 0.75rem;
+	line-height: 1.25;
+	text-align: center;
+}
+
+[type=button]:disabled, [type=reset]:disabled, [type=submit]:disabled, button:disabled {
+	cursor: default;
+	background-color: #666666;
+	border-color: #666666;
+	color: #fff;
+}
+
+[type=button]:disabled:hover, [type=reset]:disabled:hover, [type=submit]:disabled:hover, button:disabled:hover {
+	color: #fff;
+	background-color: #666666;
+	border-color: #666666;
+}
+
+/*STYLE FOR STRIPE SECTION*/
+
+.form-row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.StripeElement {
+	border: solid 1px #a4a4a4;
+	border-radius: 5px;
+	color:#696969;
+	padding: 0.5em 1em;
+	background-color: rgb(232, 240, 254) !important;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+.StripeElement--focus {
+	box-shadow: 0 1px 3px 0 #e6ebf1;
+}
+
+.StripeElement--invalid {
+	border-color: #969696;
+}
+
+.StripeElement--webkit-autofill {
+	background-color: #f5f5f5 !important;
+}
+
+.StripeElement--complete {
+	border-color: #0067f4;
+}
+
+#card-errors {
+	color: #eb1c26;
+}
+button {
+	padding-left: -15px;
+	padding-right: -15px;
+}
+
+
+@media (max-width: 767px) {
+	.navibar {
+		padding: 10px 5px;
+	}
+	
+	.navibar-cancel {
+		left: 10px;
+		top: 15px;
+	}
+	
+	.navibar-cancel-button {
+		margin-right: 0;
+	}
+	
+	.navibar-cancel-button svg {
+		width: 16px;
+		padding-bottom: 1px;
+	}
+	
+	.progress-status .first-step,
+	.progress-status .second-step {
+		margin-right: 32px;
+	}
+	
+	.progress-status .first-step:after,
+	.progress-status .second-step:after {
+		width: 33px;
+	}
+	
+	.header {
+		margin-top: 40px;
+	}
+	
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	
+	.checkout-title .title {
+		margin-bottom: 1rem; 
+	}
+	
+	.checkout-subtext {
+		margin-top: 20px;
+	}
+	
+	.select-payment-option {
+		margin-top: 40px;
+	}
+	
+	.club-price-option-monthly,
+	.club-price-option-annual {
+		min-height: fit-content;
+		display: block;
+		padding: 10px 0;
+	}
+	
+	.club-price-option-monthly .club-price-option-header,
+	.club-price-option-annual .club-price-option-header {
+		width: 100%;
+	}
+	
+	.club-price-option-monthly .club-price-option-price,
+	.club-price-option-annual .club-price-option-price {
+		padding: 5px 15px;
+	}
+	
+	.club-price-option-monthly .club-price-option-price p {
+		display: inline-block;
+	}
+	
+	.club-price-option-monthly .select-button button,
+	.club-price-option-annual .select-button button {
+		width: 100%;
+	}
+
+	
+
+}

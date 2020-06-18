@@ -1,0 +1,73 @@
+{
+	"name": "publish_app",
+	"requiresAuth": true,
+	"flow": [
+		{
+			"step": "create_app"
+		},
+		{
+			"step": "update_file"
+		},
+		{
+			"step": "publish_file"
+		},
+		{
+			"step": "update_app"
+		},
+		{
+			"step": "create_email_template"
+		},
+		{
+			"step": "share"
+		}
+	],
+	"steps": [
+		{
+			"name": "create_app",
+			"description": "Creates a new published app in the system and puts it in state of inprogress",
+			"app": "apper",
+			"method": "create",
+			"input": {
+				"email": {
+					"from": "no_reply@wisen.space"
+					, "template": {
+						"name": "publish.email"
+						, "data": {
+						}
+					}
+					, "subject": "{{PERSON}} just published a new app"
+				}
+			}
+		},
+		{
+			"name": "update_file",
+			"description": "Updates the html file being published to inprogress",
+			"app": "publisher",
+			"method": "updateFile"
+		},
+		{
+			"name": "publish_file",
+			"description": "Creates a published version of the file",
+			"app": "publisher",
+			"method": "createPublishedFile"
+		},
+		{
+			"name": "update_app",
+			"description": "Updates the app to published",
+			"app": "apper",
+			"method": "markPublished"
+		},
+		{
+			"name": "create_email_template",
+			"description": "Generate the email template if it doesn't exist",
+			"app": "publisher",
+			"method": "createEmailTemplate"
+		},
+		{
+			"name": "share",
+			"description": "Share the app with the emails provided",
+			"app": "emailer",
+			"method": "send"
+		}
+	]
+}

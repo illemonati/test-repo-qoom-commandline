@@ -1,0 +1,55 @@
+/* style guide page specific */
+header {
+ text-align: center;
+ padding: 5rem 0;
+}
+
+main {
+	margin: auto;
+	max-width: 1220px;
+}
+
+section {
+	margin-top: 5rem;
+}
+
+section>h4 {
+	margin-bottom: 3rem;
+	text-transform: uppercase;
+}
+
+.typo-example {
+	display: flex;
+	flex-flow: row;
+	margin: 0.5rem 1rem;
+}
+
+.typo-example-box {
+	flex: 1, 1, auto;
+}
+
+.typo-list {
+	margin: 1rem 0;
+}
+
+.typo-list-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #cdcdcd;
+	min-height: 4rem;
+	padding: 0 1rem 0 1rem;
+}
+
+.color-list {
+	margin: 1rem 0;
+}
+
+.color-list-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+}

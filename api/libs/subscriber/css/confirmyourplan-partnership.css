@@ -1,0 +1,315 @@
+.container {
+	max-width: 1140px;
+}
+.confirm-container {
+	width: 100vw;
+	max-width: 1140px;
+	justify-content: space-between;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 24px;
+}
+
+.left-container {
+	width: 60%;
+	padding: 32px 32px 32px 16px;
+}
+
+.right-container {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+	height: fit-content;
+	width: 40%;
+	padding: 32px 24px;
+	border-radius: 8px;
+	background-color: var(--color-gray-10);
+}
+
+.subcontainer{
+	margin-bottom: 48px;
+}
+
+.subcontainer h5 {
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+.subcontainer .subtitle {
+	font-size: 14px;
+	color: var(--text-dark-medium);
+	margin-bottom: 24px;
+	margin-top: 16px;
+}
+
+.subcontainer .details {
+	width: 100%;
+	border-top: 1px solid var(--color-gray-100);
+	border-bottom: 1px solid var(--color-gray-100);
+	margin-bottom: 24px;
+	padding: 16px 0;
+}
+
+.subcontainer .details table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.subcontainer .details table .empty-row {
+	height: 24px;
+}
+.subcontainer .details table tr td {
+	padding: 8px 0;
+}
+.subcontainer .details table tr td:nth-child(2) {
+	width: 120px;
+	text-align: right;
+}
+.subcontainer .details table ul li {
+	list-style-type: square;
+	list-style-position: inside;
+	
+}
+
+.subcontainer .details table .first-text-line > td{
+	padding-bottom: 0;
+}
+.subcontainer .details table .description > td {
+	font-size: 14px;
+	color: var(--text-dark-medium);
+	line-height: 1.25;
+}
+.domain-name {
+	color: var(--color-primary);
+}
+.price-unit {
+	font-size: 12px;
+	color: var(--text-dark-medium);
+}
+
+.subcontainer .details table tr td.toggle-container {
+	padding: 8px 0 0;
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	vertical-align: top;
+}
+
+.toggle-container .toggle-switch {
+	margin-right: 8px;
+}
+
+input[type=checkbox].toggle-switch {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--color-gray-100);
+    outline: 0;
+    cursor: pointer;
+    transition: background-color 0.09s ease-in-out;
+    position: relative;
+}
+
+input[type=checkbox].toggle-switch:checked {
+    background-color: var(--color-primary);
+}
+
+input[type=checkbox].toggle-switch::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    transform: scale(0.7);
+    left: 0;
+    transition: left 0.09s ease-in-out;
+}
+
+input[type=checkbox].toggle-switch:checked::after {
+    left: 20px;
+}
+.toggle-container span {
+	font-size: 14px;
+}
+.promote-text {
+	color: var(--color-primary);
+}
+
+.annual-info {
+	
+}
+
+.monthly-info {
+	display: none;
+}
+
+.monthly-info span {
+	display: inline;
+}
+
+.form-input .input-items input
+,.form-input .input-items-optional input {
+	font-size: 14px;
+}
+
+/*STYLE FOR STRIPE SECTION*/
+.payment-details .details {
+	border: 1px solid transparent;
+}
+.StripeElement {
+	background-color: var(--color-gray-10) !important;
+	border: solid 1px var(--color-gray-100);
+	border-radius: 4px;
+	color: var(--text-dark-high);
+	margin-bottom: 16px;
+	padding: 8px 16px;
+	width: 100%;
+}
+
+.StripeElement--focus {
+	box-shadow: 0 1px 3px 0 var(--color-gray-200);
+}
+
+.StripeElement--invalid {
+	border-color: var(--color-gray-400);
+}
+
+.StripeElement--webkit-autofill {
+	background-color: var(--color-gray-10) !important;
+}
+
+.StripeElement--complete {
+	border-color: var(--color-primary);
+}
+
+#card-errors {
+	color: var(--color-red);
+}
+
+/*STYLES FOR ORDER DETAILS*/
+
+.order-details .details table tr td:nth-child(2) {
+	width: 100px;
+	text-align: right;
+	vertical-align: top;
+}
+.order-details .details table tr.renew-info > td {
+	padding-top: 0;
+}
+.renew-info {
+	font-size: 14px;
+	color: var(--text-dark-medium);
+}
+.order-details .total-amount-container {
+	display: flex;
+	flex-flow: row nowrap;
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+.order-details .total-amount-container > div:first-child {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.order-details .total-amount-container .total-amount {
+	color: var(--color-primary);
+}
+
+.checkout-checkbox {
+	border-top: none;
+	margin: 24px 0 16px;
+	font-size: 14px
+}
+.checkout-checkbox ul li {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	margin-bottom: 4px;
+}
+.checkout-checkbox ul li input {
+	margin-top: 2px;
+	margin-right: 8px;
+	width: 18px;
+	height: 18px;
+}
+.checkout-checkbox ul li label {
+	line-height: 18px;
+}
+.checkout-checkbox a {
+	text-decoration: none;
+	color: var(--color-primary);
+}
+
+.checkout-checkbox a {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+.checkout-checkbox a:visited {
+	color: var(--color-primary);
+}
+.checkout-checkbox a:hover {
+	text-decoration: underline;
+}
+
+.agreement {
+	font-size: 14px;
+	color: var(--text-dark-medium);
+	line-height: 1.25;
+	margin-bottom: 24px;
+}
+
+.dollar::before {
+	content: '$ ';
+}
+
+input.englishonly::placeholder {
+	color: var(--color-red) !important;  
+}
+
+@media (max-width: 991px) {
+	.confirm-container {
+		flex-flow: column;
+		margin-top: 20px;
+		padding: 0 16px;
+		margin-bottom: 40px;
+	}
+	.left-container {
+		width: 100%;
+		padding: 0 16px;
+	}
+	.right-container {
+		width: 100%;
+		padding: 0 16px;
+		background-color: transparent;
+	}
+}
+@media (max-width: 577px) {
+	.container {
+		max-width: 100vw;
+	}
+	.confirm-container {
+		width: 100%;
+		padding: 0;
+	}
+	.subcontainer .details table .description > td {
+		width: 270px;
+	}
+	.toggle-container span {
+		font-size: 12px;
+	}
+	.toggle-container .monthly-info {
+		width: 100px;
+	}
+	.form-input .input-items input
+	,.form-input .input-items-optional input {
+		font-size: 12px;
+	}
+}

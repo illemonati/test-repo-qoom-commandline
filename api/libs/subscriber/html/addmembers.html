@@ -1,0 +1,142 @@
+<section class="container page">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 page-title">
+           <h1>Add Member</h1>
+           <h6>Each member will have their own URL address to access a coding space.
+                   <br>Please add a member's name and set up a URL up to 4.
+                   <br>You can add or change members later.
+            </h6>
+        </div>
+    </div> <!-- row -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="table-container">
+				<table id="memberTable">
+					<thead>
+						<tr>
+							<th class="name">Name</th>
+							<th class="email">Email</th>
+							<th class="url">URL Address</th>
+							<th class="edit"></th>
+							<th class="delete"></th>
+						</tr>						
+					</thead>
+					<tbody></tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td id="addMember" onclick="openAddNewModal()"><i class="ic-add-circle primary"></i><span>Add New Member</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center button-area">
+		<div class="col-lg-6">
+			<div class="form-input">
+                <button id="continueBtn" class="qoom-main-btn qoom-button-full" type="submit">continue</button>
+            </div>
+            <div id="doItLater" class="qoom-button-link" onclick="location.href = '/subscribe/confirmyourplan' + location.search">Skip for now</div>
+		</div>
+	</div>
+</section>
+<section id="addNewModal">
+	<div class="modal-background" onclick="closeAddNewModal()"></div>
+	<div class="modal">
+		<div class="modal-title"><h1>Add New Member</h1></div>
+		<div class="container">
+			<div class="col-lg-6">
+                <div class="form-input">
+                    <label>First Name</label>
+                    <div class="input-items default empty">
+                        <input type="text" placeholder="" class="firstName" required>
+                    </div>
+                </div> <!-- form input -->
+            </div>
+            <div class="col-lg-6">
+                <div class="form-input">
+                    <label>Last Name</label>
+                    <div class="input-items-optional default empty">
+                        <input type="text" placeholder="" class="lastName">
+                    </div>
+                </div> <!-- form input -->
+            </div>
+            <div class="col-lg-12">
+                <div class="form-input">
+                    <label>Email</label>
+                    <div class="input-items-optional default empty">
+                        <input type="email" placeholder="" class="email" >
+                    </div>
+                </div> <!-- form input -->
+            </div>		
+            <div class="col-lg-12">
+                <div class="form-input url">
+                    <label>URL Address</label>
+                    <div class="input-items url default empty">
+                        <input type="url" placeholder="" class="subdomainURL" required>
+                        <span class="domain-name">.{{domainName}}</span>
+                    </div>
+                </div> <!-- form input -->
+            </div>			
+	        <div class="buttons-container">
+	        		<button id="cancelBtn" class="qoom-main-btn qoom-button-outline qoom-button-small" type="cancel" onclick="closeAddNewModal()" >Cancel</button>
+	        		<button id="submitBtn" class="qoom-main-btn qoom-button-full qoom-button-small" type="submit" onclick=
+	        		"addNewMember()">Add</button>
+	    	</div>
+    	</div>
+    </div> <!-- modal -->
+</section>
+<section id="editModal">
+	<div class="modal-background" onclick="closeEditModal()"></div>
+	<div class="modal">
+		<div class="modal-title"><h1>Edit</h1></div>
+		<div class="container">
+			<div class="col-lg-6">
+                <div class="form-input">
+                    <label>First Name</label>
+                    <div class="input-items default empty">
+                        <input type="text" placeholder="" id='firstName'>
+                    </div>
+                </div> <!-- form input -->
+            </div>
+            <div class="col-lg-6">
+                <div class="form-input">
+                    <label>Last Name</label>
+                    <div class="input-items-optional default empty">
+                        <input type="text" placeholder="" id='lastName'>
+                    </div> 
+                </div> <!-- form input -->
+            </div>
+            <div class="col-lg-12">
+                <div class="form-input email">
+                    <label>Email</label>
+                    <div class="input-items-optional email default empty">
+                        <input type="email" placeholder=""  id='email'>
+                    </div>
+                </div> <!-- form input -->
+            </div>
+            <div class="col-lg-12">
+                <div class="form-input url">
+                    <label>URL Address</label>
+                    <div class="input-items url default empty">
+                        <input type="url" placeholder=""  id='subdomain'>
+                        <span class="domain-name" id="domainName">.{{domainName}}</span>
+                    </div>
+                </div> <!-- form input -->
+            </div>
+	        <div class="buttons-container">
+				<button id="cancelBtn" class="qoom-main-btn qoom-button-outline qoom-button-small" type="cancel" onclick='closeEditModal()' >Cancel</button>
+				<button id="editBtn" class="qoom-main-btn qoom-button-full qoom-button-small" type="submit">Update</button>
+	    	</div>
+	    </div>
+    </div>
+</section>
+<script type='text/html' id='addmembertemplate'>
+	<td id="domain-name" class="name">{{first}} {{last}}</td>
+	<td id="domain-email" class="email">{{email}}</td>
+	<td id="domain-url" class="url">{{url}}.{{domain}}</td>
+	<td class="edit"><span style="visibility:{{display}}">Edit</span></td>
+	<td class="delete"><span style="visibility:{{display}}">Delete</span></td>
+</script>

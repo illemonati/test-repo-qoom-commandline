@@ -1,0 +1,261 @@
+body {
+	max-width: 100vw;
+	overflow: auto;
+}
+
+
+.navibar {
+	padding: 30px 10px;
+	background-color: #000;
+	color: #fff;
+}
+
+.navibar-cancel {
+	position: absolute;
+	left: 20px;
+	cursor: pointer;
+}
+
+.navibar-cancel-button {
+	margin-right: 5px;
+}
+
+.navibar-title {
+	width: 100%;
+	text-align: center;
+}
+
+.progress-status div {
+	width: 32px;
+	height: 32px;
+	font-size: 1.5rem;
+	line-height: 32px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.progress-status .first-step {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
+}
+
+.progress-status .second-step,
+.progress-status .third-step {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.progress-status .first-step,
+.progress-status .second-step {
+	margin-right: 64px;
+	position: relative;
+}
+
+.progress-status .first-step:after,
+.progress-status .second-step:after {
+	content: "";
+	width: 65px;
+	height: 1px;
+	border-top: 2px dotted #fff;
+	position: absolute;
+	left: 32px;
+	top: 16px;
+}
+
+/*MAIN SECTION*/
+.container {
+	width: 100vw;
+	max-width: 640px;
+}
+
+.header {
+	margin-top: 80px;
+}
+
+.header .row {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.header .row .page-title {
+	text-align: center;
+}
+
+/*SIGNIN AREA STYLE*/
+
+.signin-area {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fff;
+}
+
+.signin-one .form-input .text, .signin-two .form-input .text {
+	font-size: 0.75rem;
+}
+
+.form-input .input-items input, .form-input .input-items textarea {
+	font-size: 0.75rem;
+}
+
+.club-name-input-container {
+	width: 100%;
+}
+
+.club-member-amount-container {
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.club-member-amount-container .form-input {
+	width: calc(80% - 15px);
+	margin-right: 15px;
+}
+.club-member-amount-container .find-price-button {
+	width: 20%;
+}
+
+.club-name-input-container .error,
+.club-member-amount-container .error {
+	border-color: #fc3832;
+}
+
+.club-create-button {
+	position: relative;
+	padding-right: 15px;
+	width: 160px;
+}
+
+[type=button]:disabled, [type=reset]:disabled, [type=submit]:disabled, button:disabled {
+	cursor: default;
+	background-color: #666666;
+	border-color: #666666;
+	color: #fff;
+}
+[type=button]:disabled:hover, [type=reset]:disabled:hover, [type=submit]:disabled:hover, button:disabled:hover {
+	color: #fff;
+	background-color: #666666;
+	border-color: #666666;
+}
+
+.hide {
+	display: none;
+}
+
+.price-container {
+	padding: 40px 0;
+	border-top: 1px solid #121212;
+}
+
+.price-container .membership-fee-title {
+	text-align: center;
+	font-size: 1rem;
+	margin-bottom: 24px;
+	font-weight: 400;
+}
+
+.price-container .membership-fee {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #0067f4;
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.price-container .membership-fee-subtext {
+	text-align: center;
+	font-size: 0.75rem;
+	color: #0067f4;
+	margin-bottom: 15px;
+}
+
+.price-container .club-plan-description {
+	padding: 12px 24px;
+	background-color: #DEEBFD;
+}
+
+.price-container .club-plan-description ul li {
+	margin: 12px 0;
+}
+
+.price-container .continue-button {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	body {
+		max-width: 100vw;
+	}
+	.navibar {
+		padding: 10px 5px;
+	}
+	
+	.navibar-cancel {
+		left: 10px;
+		top: 15px;
+	}
+	
+	.progress-status .first-step,
+	.progress-status .second-step {
+		margin-right: 32px;
+	}
+	
+	.progress-status .first-step:after,
+	.progress-status .second-step:after {
+		width: 33px;
+	}
+	
+	.container {
+		width: 100vw;
+	}
+	
+	.header {
+		margin-top: 40px;
+	}
+	
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	
+	.signin-area {
+		padding: 0 10px;
+	}
+	
+	.club-name-input-container {
+		width: 95%;
+	}
+	
+	.signin-form h5 {
+		width: 95%;
+	}
+	
+	.club-member-amount-container {
+		width: 95%;
+		display: block;
+	}
+	
+	.club-member-amount-container .form-input {
+		width: 100%;
+	}
+	
+	.club-member-amount-container .find-price-button,
+	.club-member-amount-container .find-price-button button {
+		width: 100%;
+	}
+	
+	.price-container {
+		padding-left: 15px;
+		padding-right: 15px;
+		
+	}
+	
+	.price-container .row {
+		margin-left: 0;
+		margin-right: 0;
+	
+	}
+}

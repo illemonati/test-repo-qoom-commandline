@@ -1,0 +1,183 @@
+/* Widget Sidebar CSS*/
+
+.hamburgerIcon {
+	display: none;
+}
+.menubar {
+	height: 100vh;
+	width: 320px;
+	border-right: 1px solid var(--color-gray-100);
+	color: var(--text-dark-high);
+	padding: 40px 0px 16px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	font-weight: 300;
+}
+.menubar > div {
+	width: 100%;
+}
+.menubar .logo {
+	margin-top: 16px;
+	margin-bottom: 40px;
+	padding-left: 16px;
+}
+.menubar .logo i {
+	width: 120px;
+	height: 32px;
+}
+.menubar .logo:hover {
+	cursor: pointer;
+}
+.menubar .menu-item
+, .menubar .menu-header{
+	line-height: 40px;
+	padding-left: 16px;
+}
+.menubar .menu-item:hover {
+	color: var(--color-primary);
+	cursor: pointer;
+}
+.menubar .menu-item:hover i {
+	filter: var(--ic-primary);
+}
+.menubar .menu-item i {
+	width: 20px;
+	height: 20px;
+	margin-left: 2px;
+	margin-right: 20px;
+	vertical-align: middle;
+	filter: var(--ic-gray-400);
+}
+.menubar >div:nth-child(2), .menubar >div:nth-child(3), .menubar >div:nth-child(5) {
+	border-bottom: 1px solid var(--color-gray-50);
+}
+.menubar >div:nth-child(4) {
+	flex-grow: 2;
+}
+
+.menubar .domains {
+	padding-bottom: 16px;
+}
+.menubar .domains .title {
+	color: var(--text-dark-medium);
+	font-size: 12px;
+	padding-left: 16px;
+	line-height: 24px;
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+.menubar .domains .domain-item .item-icon {
+	background-color: #FD7E14;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	width: 24px;
+	height: 24px;
+	margin-right: 16px;
+	margin-top: 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.menubar .domains .domain-item {
+	margin: 0 0 8px 0;
+}
+.menubar .domains .domain-item .domain-submenu {
+	display: none;
+	padding: 4px 0 4px 24px;
+}
+.menubar .domains .domain-item.open .item-name{
+	background-color: var(--color-gray-10);
+}
+.menubar .domains .domain-item.open .domain-submenu {
+	background-color: rgba(244, 246, 247, 0.38);
+	display: block;
+}
+.menubar .domains .domains-list .domain-item {
+	white-space: nowrap;
+}
+.selected {
+	color: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+	.hamburgerIcon {
+		display: block;
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		z-index: 1;
+	}
+	.hamburgerIcon:hover {
+		cursor: pointer;
+	}
+	.menubar-background {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, .3);
+		-webkit-transform: translateX(-100%);
+	    -moz-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	    -o-transform: translateX(-100%);
+	    transform: translateX(-100%);
+	    -webkit-transition: all 0.3s ease-out 0s;
+	    -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	    -o-transition: all 0.3s ease-out 0s;
+	    transition: all 0.3s ease-out 0s;
+	}
+	.menubar-background.open {
+		display: block;
+		-webkit-transform: translateX(0);
+	    -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	    -o-transform: translateX(0);
+	    transform: translateX(0);
+	}
+	.menubar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 99;
+		height: 100%;
+		width: 70vw;
+		max-width: 400px;
+		background-color: #fff;
+		border-right: none;
+		padding: 0;
+		-webkit-transform: translateX(-101%);
+	    -moz-transform: translateX(-101%);
+	    -ms-transform: translateX(-101%);
+	    -o-transform: translateX(-101%);
+	    transform: translateX(-101%);
+	    -webkit-transition: all 0.3s ease-out 0s;
+	    -moz-transition: all 0.3s ease-out 0s;
+	    -ms-transition: all 0.3s ease-out 0s;
+	    -o-transition: all 0.3s ease-out 0s;
+	    transition: all 0.3s ease-out 0s;
+	}
+	.menubar.open {
+		-webkit-transform: translateX(0);
+	    -moz-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	    -o-transform: translateX(0);
+	    transform: translateX(0);
+	}
+	.menubar .logo {
+		margin: 16px 0 0;
+		padding-left: 16px;
+	}
+	.menubar .logo i {
+		width: 80px;
+		height: 20px;
+	}
+}

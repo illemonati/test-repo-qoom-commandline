@@ -1,0 +1,12 @@
+body {
+	justify-content: center;
+}
+
+.email-invitation-link {
+	height: 80px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #c3c3c3;
+	justify-content: center;
+	
+}

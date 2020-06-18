@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Checkout</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/libs/lander/images/favicon.ico" type="image/png">
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/bootstrap.min.css">
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/LineIcons.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/nice-select.css">
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/magnific-popup.css">
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/slick.css">
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/nice-select.css">
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/default.css">
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="/libs/lander/css/style.css">
+    <!--====== Qoom css to adjust to our style ======-->
+	<link rel="stylesheet" href="/libs/lander/css/qoom-checkout.css">
+</head>
+
+<body>
+	<!--NAVIBAR-->
+	<div class='navibar'>
+		<div class="navibar-cancel" onclick='cancelSubscription()'>
+			<span class="navibar-cancel-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+			</span>
+			<span class="navibar-cancel-text">Cancel</span>
+		</div>
+		<div class="navibar-title">
+			<span>Checkout</span>
+		</div>
+		
+	</div>
+		
+    <!--HEADER STARTS-->
+		<section class="mt-80">
+	        <div class="header">
+	            <div class="row">
+	                <div class="col-lg-12">
+	                    <div class="">
+	                       <h1 class="page-title">Checkout</h1>
+	                    </div> <!-- page-banner-content -->
+	                </div>
+	            </div> <!-- row -->
+	        </div> <!--  -->
+	    </section>
+	    <!--HEADER ENDS-->
+
+    <!--====== CHECKOUT PART START ======-->
+
+	<section class="checkout-area pb-100">
+        <div class="container">
+        	<div class="row">
+                    <div class="col-lg-12 order-lg-first">
+                        <div class="checkout-cart mt-50">
+                            <div class="checkout-title">
+                                <h5 class="title">Your Order</h5>
+                            </div> <!-- checkout title -->
+                            <div class="checkout-cart-product mt-10">
+                                <ul>
+                                    <li>
+                                        <div class="single-product d-flex justify-content-between">
+                                            <div class="product-name">
+                                            	<!--KIAE: font-size and font-weight looks too big and too bold on UI Kit-->
+                                                <p class="product">Club Member</p>
+                                                <p>Club Name: Wisen Space</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <span>$194.24</span>
+                                                <p>/ year</p>
+                                            </div>
+                                        </div> <!-- single-product -->
+                                    </li>
+                                       <li>
+                                        <div class="single-product d-flex justify-content-between">
+                                            <div class="product-name">
+                                                <p class="product">Sales Tax</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <span>$0.00</span>
+                                            </div>
+                                        </div> <!-- single-product -->
+                                    </li>
+                                    <li>
+                                        <div class="single-product d-flex justify-content-between">
+                                            <div class="product-name">
+                                                <p class="total">Total</p>
+                                            </div>
+                                            <div class="total-price">
+                                                <h4>$194.24</h4>
+                                            </div>
+                                        </div> <!-- single-product -->
+                                    </li>
+                                </ul>
+                            </div> <!-- checkout cart product -->
+                        </div> <!-- checkout cart -->
+                    </div>
+                    <div class="col-lg-12 order-lg-last">
+                    	<div class="checkout-payment mt-25">
+                            <div class="checkout-title">
+                                <h5 class="title">Enter Payment</h5>
+                            </div> <!-- checkout title -->
+                            <div class="mt-15 form-style-two">
+                                <div class="">
+                                    <div class="pay-top sin-payment">
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="single-checkout-form mt-15 form-input">
+                                                        <label>Credit Card Number</label>
+                                                        <div class="input-items default">
+                                                            <input type="text" placeholder="Card Number">
+                                                        </div>
+                                                    </div> <!-- single checkout form -->
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="single-checkout-form mt-15 form-input">
+                                                        <label>Expiration</label>
+                                                        <div class="input-items default">
+                                                            <input type="text" placeholder="MM/YY">
+                                                        </div>
+                                                    </div> <!-- single checkout form -->
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="single-checkout-form mt-15 form-input">
+                                                        <label>CVC</label>
+                                                        <div class="input-items default">
+                                                            <input type="text" placeholder="CVC">
+                                                        </div>
+                                                    </div> <!-- single checkout form -->
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="single-checkout-form mt-15 form-input payment-name">
+                                                        <label>Name on Card</label>
+                                                        <div class="input-items default empty">
+                                                            <input type="text" placeholder="Name on card" required>
+                                                        </div>
+                                                    </div> <!-- single checkout form -->
+                                                </div>
+                                            </div> <!-- row -->
+                                        </div>
+                                    </div> <!-- pay top -->
+                                </div> <!-- checkout radio -->   
+                            </div>
+                        	</div> <!-- checkout payment -->
+                        <div class="checkout-form mt-50 form-style-two">
+                            <div class="checkout-title">
+                                <h5 class="title">Billing Address</h5>
+                            </div> <!-- checkout title -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="single-checkout-form mt-25 form-input billing-info">
+                                        <label>Address Line 1</label>
+                                        <div class="input-items default empty">
+                                            <input type="text" class='address-one' placeholder="Address Line 1" required>
+                                        </div>
+                                    </div> <!-- single checkout form -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-checkout-form mt-25 form-input">
+                                        <label>Address Line 2 <span>(Optional)</span></label>
+                                        <div class="input-items default">
+                                            <input type="text" placeholder="Address Line 2">
+                                        </div>
+                                    </div> <!-- single checkout form -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-checkout-form mt-25 form-input billing-info">
+                                        <label>City</label>
+                                        <div class="input-items default empty">
+                                            <input type="text" class='city' placeholder="City" required> 
+                                        </div>
+                                    </div> <!-- single checkout form -->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single-checkout-form mt-25 form-input billing-info">
+                                        <label>State</label>
+                                        <div class="input-items default">
+                                             <select>
+                                                  <option value="0">New York</option>
+                                                  <option value="1">Missouri</option>
+                                                  <option value="2">Arkansas</option>
+                                                  <option value="3">California</option>
+                                                  <option value="4">Delaware</option>
+                                                  <option value="5">Montana</option>
+                                                  <option value="6">Louisiana</option>
+                                             </select>
+                                        </div>
+                                    </div> <!-- single checkout form -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single-checkout-form mt-25 form-input billing-info">
+                                        <label>Zip Code</label>
+                                        <div class="input-items default empty">
+                                            <input type="text" class='zipcode' placeholder="Zip Code" required>
+                                        </div>
+                                    </div> <!-- single checkout form -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input text-left mt-50 extra-small-paragraph">
+                                        <p class="text">You won't be charged until your club is activated. Your club will be activated
+                                        when all invited members accept the invitation and agree to start subscription.</p>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input text-left mt-20 extra-small-paragraph">
+                                        <p class="text">By clicking the "Confirm Subscription" button, you agree to automatic charges of $25 each month
+                                        starting on the activation date of your club until you cancel. For details, find our <a href="#">Cancellation Policy</a>.</p>
+                                    </div> <!-- form input -->
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-input text-left mt-20 extra-small-paragraph">
+                                        <p class="text">By confirming, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+                                    </div> <!-- form input -->
+                                </div>
+                          
+                            </div> <!-- row -->
+                        </div> <!-- checkout form -->
+                        
+                        <div class="checkout-btn light-rounded-buttons">
+                            <button id='confirmSubscriptionBtn' class="main-btn light-rounded-two" type="submit" onclick="confirmSubscription()" disabled>Confirm Subscription</button>
+                        </div> <!-- checkout btn -->
+                    </div>
+                </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== jquery js ======-->
+    <script src="/libs/lander/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="/libs/lander/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="/libs/lander/js/bootstrap.min.js"></script>
+    <script src="/libs/lander/js/popper.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="/libs/lander/js/slick.min.js"></script>
+
+    <!--====== Isotope js ======-->
+    <script src="/libs/lander/js/isotope.pkgd.min.js"></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="/libs/lander/js/imagesloaded.pkgd.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="/libs/lander/js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Appear js ======-->
+    <script src="/libs/lander/js/jquery.appear.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="/libs/lander/js/waypoints.min.js"></script>
+    <script src="/libs/lander/js/jquery.counterup.min.js"></script>
+
+    <!--====== Validator js ======-->
+    <script src="/libs/lander/js/validator.min.js"></script>
+
+    <!--====== Nice Select js ======-->
+    <script src="/libs/lander/js/jquery.nice-select.min.js"></script>
+
+    <!--====== CountDown js ======-->
+    <script src="/libs/lander/js/jquery.countdown.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="/libs/lander/js/main.js"></script>
+    
+    <script src="/libs/restfull.js"></script>
+    <script>
+    // DATA VALIDATION
+	    var $nameOnCard = document.querySelector('.payment-name input');
+	    var $billingInfoInputs = document.querySelectorAll('.billing-info input');
+	    validators = {
+    		notEmpty: function(v) {
+    			return !!(v && v.length)
+    		},
+    		isEmail: function(v) {
+    			var emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    			return emailRegex.test(v);
+    		},
+    	}
+    	
+    	$nameOnCard.setAttribute('validator', 'notEmpty');
+    	$nameOnCard.addEventListener('keyup', function() {
+    		var vd = this.getAttribute('validator');
+    		if (!vd) return;
+    		var vfn = validators[vd];
+			if(!vfn(this.value)) {
+    			this.parentNode.classList.remove('default');
+    			this.parentNode.classList.add('error');
+    		} else {
+    			this.parentNode.classList.remove('error');
+    			this.parentNode.classList.add('default');
+    		}
+    	});
+    	
+    	$billingInfoInputs.forEach($billingInfoInput => {
+    		$billingInfoInput.setAttribute('validator', 'notEmpty');
+	    	$billingInfoInput.addEventListener('keyup', function() {
+	    		this.parentNode.classList.remove('empty');
+	    		var vd = this.getAttribute('validator');
+	    		if (!vd) return;
+	    		var vfn = validators[vd];
+				if(!vfn(this.value)) {
+	    			this.parentNode.classList.remove('default');
+	    			this.parentNode.classList.add('error');
+	    		} else {
+	    			this.parentNode.classList.remove('error');
+	    			this.parentNode.classList.add('default');
+	    		}
+	    	});
+    	});
+    	
+    	function validateInputs() {
+    		if (!document.querySelector('.error') && !!$nameOnCard.value) {
+    			document.querySelector('#confirmSubscriptionBtn').disabled = false;
+    		} else {
+    			document.querySelector('#confirmSubscriptionBtn').disabled = true;
+    		}
+    	};
+    	setInterval(validateInputs, 1000);
+    
+    
+    	// CODE FOR BUTTONS
+    	function confirmSubscription() {
+			restfull.post({
+				path: '/subscribe/confirmsubscription'
+			}, function(err, resp) {
+				if(err) return alert(err);
+				location.href = JSON.parse(resp).url;
+			})
+		}
+		function cancelSubscription() {
+			location.href = '/libs/lander/index.html' 
+		}
+    	
+    </script>
+
+</body>
+
+</html>

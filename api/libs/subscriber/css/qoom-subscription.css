@@ -1,0 +1,181 @@
+body {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 100vh;
+	max-width: 1400px;
+	max-height: 100vh;
+	margin: auto;
+}
+
+/*RIGHT SIDE*/
+#subscription-container {
+	height: 100vh;
+	width: 80vw;
+	position: relative;
+	padding: 40px;
+	overflow: auto;
+}
+
+#subscription-container .hamburgerIcon {
+	display: none;
+}
+
+#subscription-container .page-title {
+	width: 100%;
+	height: 64px;
+	font-size: 2.75rem;
+	margin-bottom: 56px;
+}
+
+#subscription-container .plan-details-container table,
+#subscription-container .payment-method-container table,
+#subscription-container .billing-history-container table {
+	width: 100%;
+	margin-bottom: 48px;
+}
+
+#subscription-container .plan-details-container table tr td,
+#subscription-container .payment-method-container table tr td,
+#subscription-container .billing-history-container table tr th,
+#subscription-container .billing-history-container table tr td {
+	min-width: 120px;
+	min-height: 40px;
+	padding: 16px 0;
+	vertical-align: top
+}
+
+#subscription-container .plan-details-container table .change-plan,
+#subscription-container .payment-method-container table .update-payment-info {
+	font-size: 0.75rem;
+	color: #0067F4;
+	margin-left: 16px;
+	cursor: pointer;
+}
+
+#subscription-container .plan-details-container table .plan-expiration-info {
+	font-size: 0.75rem;
+}
+
+#subscription-container .payment-method-container table .payment-card-info {
+	width: 250px;
+}
+
+#subscription-container .billing-history-container table tr th {
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #666666;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D8D8D8;
+}
+
+#subscription-container .billing-history-container table .billing-date {
+	color: #0067F4;
+}
+
+@media (max-width: 1023px) {
+	#subscription-container {
+		padding: 20px;
+		width: 100vw;
+	}
+	
+	#subscription-container .hamburgerIcon {
+		display: block;
+		position: absolute;
+		top: 25px;
+		left: 20px;
+		z-index: 1;
+	}
+	
+	#subscription-container .hamburgerIcon:hover {
+		cursor: pointer;
+	}
+	
+	#subscription-container .page-title {
+		height: 50px;
+		padding: 5px;
+		font-size: 1.25rem;
+		text-align: center;
+		font-weight: 400;
+		border-bottom: 1px solid #a4a4a4;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	#subscription-container .plan-details-container
+	,#subscription-container .payment-method-container
+	,#subscription-container .billing-history-container {
+		padding: 0 5px;
+	}
+	
+	#subscription-container .plan-details-container .plan-details-title
+	,#subscription-container .payment-method-container .payment-method-title
+	,#subscription-container .billing-history-container .billing-history-title {
+		font-size: 1rem;
+	}
+	
+	#subscription-container .plan-details-container table
+	,#subscription-container .payment-method-container table {
+		margin-bottom: 20px;
+	}
+	
+	#subscription-container .billing-history-container table {
+		margin: 10px 0;
+	}
+	
+	#subscription-container .plan-details-container table tr 
+	,#subscription-container .payment-method-container table tr
+	,#subscription-container .billing-history-container table tr {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	#subscription-container .plan-details-container table tbody tr td:nth-child(1) {
+		display: none;
+	}
+
+	#subscription-container .payment-method-container table .payment-card-info {
+		flex-grow: 1;
+	}
+	
+	#subscription-container .payment-method-container table .update-card-info {
+		text-align: right;
+	}
+	
+	#subscription-container .payment-method-container table tr td {
+		min-width: 60px;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr:nth-child(1) {
+		display: none;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr:nth-child(2) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	
+	#subscription-container .billing-history-container table tbody tr td {
+		min-height: 25px;
+		padding: 3px 0;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr td.billing-date {
+		width: 100%;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr td.billing-description {
+		width: 100%;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr td.billing-payment-method {
+		width: 60%;
+	}
+	
+	#subscription-container .billing-history-container table tbody tr td.billing-total {
+		width: 40%;
+		text-align: right;
+	}
+}

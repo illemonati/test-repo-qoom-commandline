@@ -1,0 +1,57 @@
+<section class="container page">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 page-title">
+           <h1>Create Account</h1>
+           <h6>You will use this account to manage your domain, subscription, payment, etc.</h6>
+        </div>
+    </div> <!-- row -->
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-input email">
+                        <label>Email Address</label>
+                        <div class="input-items default empty">
+                            <input type="email" placeholder="Enter your email address" required id='email' value="{{emailValue}}" disabled>
+                        </div>
+                    </div> <!-- form input -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-input">
+                        <label>First Name</label>
+                        <div class="input-items default empty">
+                            <input type="text" placeholder="Your first name" id='firstName' required>
+                        </div>
+                        
+                    </div> <!-- form input -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-input">
+                        <label>Last Name</label>
+                        <div class="input-items default empty">
+                            <input type="text" placeholder="Your last name" required id='lastName'>
+                        </div>
+                    </div> <!-- form input -->
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-input">
+                        <label>Password</label>
+                        <div class="input-items default empty">
+                            <input type="password" placeholder="Create Password" required id='password'>
+                        </div>
+                        <div id='passworderr' class='password errormessage'>
+                        	Password should have at least one special, numeric, uppercase, and lowercase character<br>
+                        	Password needs to be at least 9 characters long
+                        </div>
+                    </div> <!-- form input -->
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-input">
+                        <button id="createAccountBtn" class="qoom-main-btn qoom-button-full" type="submit" onclick='createAccount()'>CREATE</button>
+                    	<button id="progressBtn" class="qoom-main-btn qoom-button-full"><i class="ic-spinner white"></i></button>
+                    </div> <!-- form input -->
+                </div>
+            </div>
+        </div>
+    </div> <!-- row -->
+</section>

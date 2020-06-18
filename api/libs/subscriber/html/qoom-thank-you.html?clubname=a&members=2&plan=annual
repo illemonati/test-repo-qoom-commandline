@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thank You for signing up</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!--====== Bootstrap css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/bootstrap.min.css">
+	    <!--====== Line Icons css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/LineIcons.css">
+	    <!--====== Magnific Popup css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/magnific-popup.css">
+	    <!--====== Slick css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/slick.css">
+	    <!--====== Nice Select css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/nice-select.css">
+	    <!--====== Default css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/default.css">
+	    <!--====== Style css ======-->
+	    <link rel="stylesheet" href="/libs/lander/css/style.css">
+	    <!--====== Qoom css to adjust to our style ======-->
+	    <link rel="stylesheet" href="/libs/subscriber/css/qoom-thank-you.css">
+	</head>
+	<body>
+		<!--NAVIBAR-->
+		<header class='header-area header-five'>
+			<div class="qoom-navibar navbar-area navbar-five navbar-transparent">
+	            <div class="navibar-container">
+	                <div class="row">
+	                    <div class="col-lg-12">
+	                        <nav class="navbar navbar-expand-lg">
+	                            <a class="navbar-brand" href="/">
+	                                <img src="/libs/assets/image/logo-qoom-tag.png" alt="Logo">
+	                            </a>
+	                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFive" aria-controls="navbarFive" aria-expanded="false" aria-label="Toggle navigation">
+	                                <span class="toggler-icon"></span>
+	                                <span class="toggler-icon"></span>
+	                                <span class="toggler-icon"></span>
+	                            </button>
+	
+	                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarFive">
+	                                <ul class="navbar-nav ml-auto">
+	                                    <li class="nav-item active">
+	                                        <a class="page-scroll" href="/#home">Home</a>
+	                                    </li>
+	                                    <li class="nav-item">
+	                                        <a class="page-scroll" href="/#about">About</a>
+	                                    </li>
+	                                    <li class="nav-item">
+	                                        <a class="page-scroll" href="/#pricing">Pricing</a>
+	                                    </li>
+	                                    <li class="nav-item">
+	                                        <a class="page-scroll" href="/#contact">Contact</a>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	
+	                            <div class="navbar-btn">
+	                                <ul>
+	                                	<li><a class="light" href="/subscribe/login">Log In</a></li>
+	                                    <li><a class="solid" href="/subscribe/signup">Sign Up</a></li>
+	                                </ul>
+	                            </div>
+	                            <div class='navbar-logedin d-non d-sm-inline-block'>
+	                            	<ul>
+	                            		<li><a><div class='logedin-avatar-img'></div></a></li>
+	                            		<li>
+	                            			<a><span class='logedin-username'>Pengsu</span></a>
+		                            		<ul class="sub-menu">
+		                                        <li class='myqoom'><a href="#">MY QOOM</a></li>
+		                                        <li class='account-setting'><a href="/subscribe/accountsettings">ACCOUNT SETTINGS</a></li>
+		                                        <li class='subscription'><a href="/subscribe/subscription">SUBSCRIPTION</a></li>
+		                                        <li class='logout'><a href="#">LOGOUT</a></li>
+		                                    </ul>
+	                                    </li>
+	                            	</ul>
+	                            	
+	                           
+	                            </div>
+	                        </nav> <!-- navbar -->
+	                    </div>
+	                </div> <!-- row -->
+	            </div> <!-- container -->
+	        </div>
+		</header>
+		<section class="mt-80">
+	        <div class="header">
+	            <div class="row">
+	                <div class="col-lg-12 p-0">
+	                    <div class="">
+	                       <h1 class="page-title">Thanks for signing up!</h1>
+	                    </div> <!-- page-banner-content -->
+	                </div>
+	            </div> <!-- row -->
+	        </div> <!--  -->
+	    </section>
+		<section class="signin-area signin-one mt-20 mb-20">
+	        <div class="container">
+	            <div class="row justify-content-center">
+	                <div class="col-lg-12">
+	                	<p>Your account has been created successfully. Your club also has been created.
+	                	Now you need to invite club members to join.</p>
+	                </div>
+	                <div class='col-lg-12'>
+	                	<h5 class='invite-member-title'>Invite Members</h5>
+	                	<div class="signin-form form-style-two light-rounded-buttons">
+	                        <div id="memberContainer" class="member-container">
+	                        	<div class="row">
+	                        		<div class="member-index-container">
+						    			<p class="member-index-number">1</p>
+						    		</div>
+						    		<div class="member-info-container">
+		                    			<div class="club-member-name">
+		                                    <div class="form-input">
+		                                        <div class="input-items default">
+		                                        	<i class="lni-user"></i>
+		                                    		<input type="text" placeholder="Keith Nichols(It's you!)" class="club-admin" disabled>
+		                                        </div>
+		                                    </div> 
+		                                </div>
+		                                <div class="club-member-email">
+		                                	<div class="form-input">
+		                                		<div class="input-items default">
+		                                			<i class="lni-envelope"></i>
+		                                			<input type="email" placeholder="keith.nichols@mail.io" class="club-admin " disabled>
+		                                		</div>
+		                                	</div>
+		                                </div>
+	                                </div>	
+								</div>
+							</div>
+	                    	<div class="row">
+	                            <div class="col-lg-12">
+	                                <div class="form-input">
+	                                    <button id="sendInvitation" class="main-btn light-rounded-two send-invitation-button" type="submit" onclick="sendInvitations()" disabled>Send Invitation</button>
+	                                </div> <!-- form input -->
+	                            </div>
+	                        </div>
+	                    </div> <!-- signin form -->
+	                </div>
+	            </div> <!-- row -->
+	        </div> <!-- container -->
+	    </section>
+	    <script>
+			var $memberContainer = document.querySelector('#memberContainer');
+			var $memberIndex = document.querySelector('.member-index-number');
+			// var template = document.querySelector('#addMemberTemplate').innerHTML;
+			var count = 2;
+			var members = '';
+			var $div;
+			
+			function addMember() {
+				$div = document.createElement('div');
+				$div.className = 'row';
+				$div.innerHTML = `<div class="member-index-container">
+					    			<p class="member-index-number">${count}</p>
+					    		</div>
+					    		<div class="member-info-container">
+						            <div class="club-member-name">
+						            	<div class="form-input">
+							                <div class="input-items default empty">
+												<i class="lni-user"></i>
+							                	<input type="text" placeholder="Name" class="" required>
+							                </div>
+							            </div>
+						            </div>
+						            <div class="club-member-email">
+						            	<div class="form-input">
+							                <div class="input-items default empty">
+							                	<i class="lni-envelope"></i>
+							                	<input type="email" placeholder="Email" class="" required>
+							                </div>
+							            </div>
+							        </div>
+					            </div>`
+				$memberContainer.appendChild($div);
+				count++;
+			}
+			// put the number of members below 
+			let memberCount; 
+			try {
+				memberCount = parseInt(location.search.split('members=')[1].split('&')[0]);
+			} catch(ex) {
+				
+			}
+			if (isNaN(memberCount) || memberCount < 1 || memberCount > 30) alert('Invalid Member Count!');
+			while(count <= memberCount) {
+				addMember();
+			}
+		</script>
+		
+		<script>
+			// VALIDATE INPUTS
+	    	var $names = document.querySelectorAll('.club-member-name input');
+	    	var $emails = document.querySelectorAll('.club-member-email input');
+	    	validators = {
+	    		notEmpty: function(v) {
+	    			return !!(v && v.length)
+	    		},
+	    		isEmail: function(v) {
+	    			var emailRegex = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+	    			return emailRegex.test(v);
+	    		}
+	    	}
+		
+	    	$names.forEach($name => {
+	    		$name.setAttribute('validator', 'notEmpty');
+		    	$name.addEventListener('keyup', function() {
+		    		this.parentNode.classList.remove('empty');
+		    		var vd = this.getAttribute('validator');
+		    		if (!vd) return;
+		    		var vfn = validators[vd];
+					if(!vfn(this.value)) {
+		    			this.parentNode.classList.remove('default');
+		    			this.parentNode.classList.add('error');
+		    		} else {
+		    			this.parentNode.classList.remove('error');
+		    			this.parentNode.classList.add('default');
+		    		}
+		    	});
+	    	});
+	    	var duplicatedEmail = false;
+	    	$emails.forEach(($email, i) => {
+	    		$email.setAttribute('validator', 'isEmail');
+	    		$email.addEventListener('keyup', function() {
+	    			this.parentNode.classList.remove('empty');
+	    			var vd = this.getAttribute('validator');
+	    			if (!vd) return;
+	    			var vfn = validators[vd];
+	    			if(!vfn(this.value)){
+	    				this.parentNode.classList.remove('default');
+	    				this.parentNode.classList.add('error');
+	    			} else {
+	    				this.parentNode.classList.remove('error');
+	    				this.parentNode.classList.add('default');
+	    			}
+	    			duplicatedEmail = 
+	    				Array.from($emails).filter((e,x) => x !== i).map(e => e.value).includes(this.value);
+	    		});
+	    	});
+	    	
+	    	function validateInputs() {
+	    		if (!document.querySelector('.error') && !document.querySelector('.empty') && !duplicatedEmail) {
+	    			document.querySelector('#sendInvitation').disabled = false;
+	    			return true;
+	    		} else {
+	    			document.querySelector('#sendInvitation').disabled = true;
+	    			return false;
+	    		}
+	    	};
+	    	
+	  //  	function getInvites() {
+			//     const names = Array.from(document.querySelectorAll('input[type=text]')).map(n => n.value).filter(n => n)
+			//         , emails =Array.from(document.querySelectorAll('input[type=email]')).map(n => n.value).filter(n => n)
+			//     ;
+			//     return emails.reduce((o, e, i) => {
+			//     	o[e] = names[i];
+			//     	return o;
+			//     }, {})
+			// }
+	    	
+	    	setInterval(validateInputs, 1000);
+		
+			// ACTIONS FOR BUTTONS
+			function choosePriceOption() {
+				location.href = '/subscribe/choosepriceoption';
+			}
+			
+			function sendInvitations() {
+				if(!validateInputs()) return;
+				
+				const q = parseQuery();
+				restfull.post({
+					path: '/subscribe/sendinvites'
+					, data: Object.assign(q, { invites: getInvites() })
+				}, function(err, resp) {
+					if(err) return alert(err);
+					alert(resp)
+					//location.href = JSON.parse(resp).url;
+				})
+			}
+			
+			function parseQuery() {
+				const q = location.search.substr(1);
+				if(!q) return {};
+				return q.split('&').reduce((o, kv) => {
+					const parts = kv.split('=');
+					o[parts[0]] = parts[1];
+					return o;
+				}, {})
+			}
+			
+			const q = parseQuery();
+			if(!q.clubname) {
+				location.href = '/subscribe/nameyourclub'
+			} else if(!q.members) {
+				location.href = '/subscribe/choosepriceoption?clubname=' + q.clubname
+			} else if(!q.plan) {
+				location.href = '/subscribe/choosepriceoption?clubname=' + q.clubname
+			}
+		</script>
+
+
+	    <script src='/libs/restfull.js'></script>
+	    <script>
+	    	function goToClubAdmin() {
+	    		location.href = '/subscribe/clubaccount'
+	    	}
+	    
+	    	function goToCheckout() {
+				location.href = '/subscribe/checkout'
+			}
+	    </script>
+
+	</body>
+</html>

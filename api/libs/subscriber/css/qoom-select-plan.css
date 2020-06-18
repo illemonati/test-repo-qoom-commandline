@@ -1,0 +1,214 @@
+.header {
+	margin-top: 80px;
+}
+
+.header .row {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.header .row {
+	text-align: center;
+}
+
+.header .row .page-title {
+	text-align: center;
+}
+
+
+/*PRICING COLUMNS : GENERAL*/
+
+.pricing-style-two {
+	min-height: 550px;
+}
+
+.pricing-style-two .pricing-header {
+	min-height: 173px;
+}
+
+.pricing-style-two .pricing-header .price {
+    display: inline-block;
+}
+
+.ic-check-circle {
+	height: 18px;
+	width: 18px; 
+	vertical-align: text-bottom;
+}
+
+.pricing-style-two .pricing-btn {
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+}
+
+.pricing-style-two .pricing-btn .disabled {
+	pointer-events: none;
+}
+
+
+/*PRICING COLUMNS: INDIVIDUAL*/
+.pricing-area .individual .pricing-header {
+	z-index: 10;
+}
+
+.pricing-area .individual .coming-soon {
+	width: 100%;
+	font-size: 2rem;
+    font-weight: 600;
+    line-height: 80px;
+    margin-top: 160px;
+    color: #121212;
+    text-align: center;
+}
+
+.pricing-area .individual .bottom-shape {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+	z-index: 0;
+	top: 120px;
+}
+
+.pricing-area .individual .bottom-shape .bottom-shape-continue {
+	width: 100%;
+	height: 75%;
+	background-color: #D8D8D8;
+	opacity: 0.7;
+	z-index: 0;
+	display: block;
+	position: relative;
+	bottom: 0;
+}
+
+.pricing-area .individual .bottom-shape .bottom-shape-continue:before {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 100% 50%;
+	width: 80%;
+	height: 140px;
+	background-color: #D8D8D8;
+	opacity: 0.6;
+	right: -5px;
+	top: -60px;
+}
+
+.pricing-area .individual .bottom-shape .bottom-shape-continue:after {
+	content: "";
+	display: block;
+	position: absolute;
+	border-radius: 50% 100%;
+	width: 80%;
+	height: 170px;
+	background-color: #D8D8D8;
+	opacity: 0.6;
+	left: -5px;
+	top: -80px;
+}
+
+.pricing-area .individual .sub-title:before {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+
+/*PRICING COLUMNS: CLUB*/
+.pricing-text-starting-at {
+	font-size: 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: -30px;
+    color: #6c6c6c;
+}
+
+.pricing-text-per-member {
+	font-size: 0.75rem;
+	color: #6c6c6c;
+}
+
+
+/*PRICING COLUMNS: ORGANIZATION*/
+.pricing-organization-subtext {
+	font-size: 0.75rem;
+	color: #6c6c6c;
+	margin: 20px 0 0 0;
+}
+
+.pricing-organization {
+	font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/*MEDIAQUERY*/
+@media (max-width: 576px) {
+	.pricing-organization {
+		margin: 30px 70px 30px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.header {
+		margin-top: 40px;
+	}
+	
+	.header .row .page-subtitle {
+		text-align: left;
+	}
+	
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	
+	.pricing-area .container .row {
+		flex-direction: column;
+	}
+	
+	.pricing-area .individual {
+		order: 3;
+	}
+	
+	.pricing-area .club {
+		order: 1;
+	}
+	
+	.pricing-area .org {
+		order: 2;
+	}
+	
+	.pricing-style-two {
+		min-height: 500px;
+	}
+	.pricing-style-two .pricing-header {
+		min-height: 123px;
+	}
+	.pricing-style-two .pricing-list {
+		margin-top: 0px;
+	}
+	
+	.pricing-style-two .pricing-btn {
+		bottom: 40px;
+	}
+	
+	.pricing-organization {
+		margin: 30px 30px 30px 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.pricing-area .individual {
+		order: 3;
+	}
+	
+	.pricing-area .club {
+		order: 1;
+	}
+	
+	.pricing-area .org {
+		order: 2;
+	}
+	
+}

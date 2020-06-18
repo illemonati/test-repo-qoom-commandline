@@ -1,0 +1,32 @@
+<!doctype html>
+<!--https://github.com/jstimpfle/tetris-on-a-plane-->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tetris</title>
+<link rel="stylesheet" type="text/css" href="publish_test_tetris.css">
+<script src="/publish_test_tetris.js"></script>
+</head>
+<body>
+    <div id='animation'></div>
+    <script>
+        var animation = document.querySelector('#animation');
+        function randomizeTime() {
+            return Math.random()*2000;
+        }
+        
+        function dropStuff() {
+            var span = document.createElement('span');
+            span.style.left = Math.random()*100 + 'vw';
+            animation.appendChild(span);
+            setTimeout(dropStuff, randomizeTime());
+        }
+        setTimeout(dropStuff, randomizeTime());
+    </script>
+    <div id='game'></div>
+    <script>
+        var $el = document.querySelector('#game');
+        tetris_run($el);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/*===================
+Create Account Page CSS
+====================*/
+
+.container {
+	max-width: 640px;
+}
+
+.form-input label::after {
+	content: "*";
+}
+
+.form-input button {
+	margin-top: 24px;
+}
+
+#progressBtn {
+	display: none;
+	position: absolute;
+	width: calc(100% - 30px);
+	z-index: 5;
+}
+.form-input button i {
+	width: 32px;
+	height: 32px;
+}
+
+.password.errormessage {
+	color: var(--color-red);
+	font-size: 12px;
+	line-height: 1.5;
+	display:none;
+	padding: 8px;
+}

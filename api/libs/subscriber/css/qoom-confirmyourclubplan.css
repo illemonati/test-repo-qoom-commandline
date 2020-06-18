@@ -1,0 +1,133 @@
+body {
+	max-width: 100vw;
+	overflow: auto;
+}
+
+/*MAIN SECTION*/
+.container {
+	width: 100vw;
+	max-width: 640px;
+}
+ 
+.header {
+	margin-top: 80px;
+}
+
+.header .row {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.header .row .page-title {
+	text-align: center;
+}
+
+/*SIGNIN AREA STYLE*/
+
+.signin-area {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fff;
+}
+
+.signin-one .form-input .text, .signin-two .form-input .text {
+	font-size: 0.75rem;
+}
+
+.form-input .input-items input, .form-input .input-items textarea {
+	font-size: 0.75rem;
+}
+
+.club-info-container {
+	width: 100%;
+	border: 1px solid #0067f4;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.club-info-title {
+	margin-bottom: 40px;
+}
+
+.club-info-details {
+	margin-bottom: 40px;
+}
+
+.club-info-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.club-info-container table tr, td {
+	padding: 10px 40px;
+}
+
+.club-info-container table tr > td:nth-child(2) {
+	text-align: right;
+}
+
+.club-info-container .price-per-month {
+	color: #0067f4;
+}
+
+ul li {
+	list-style-position: inside;
+	margin-bottom: 16px;
+	text-indent: -0.5rem;
+    padding-left: 1rem;
+}
+
+.ic-check-circle {
+	margin-right: 5px;
+	height: 18px;
+	width: 18px;
+	vertical-align: text-bottom;
+}
+
+.club-plan-confirm-btn {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+	body {
+		max-width: 100vw;
+	}
+	
+	.container {
+		width: 100vw;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.header {
+		margin-top: 20px;
+	}
+	
+	.header .row .page-title {
+		font-size: 32px;
+		text-align: left;
+	}
+	
+	.signin-area {
+		padding: 10px 0;
+	}
+
+	.signin-form h5 {
+		width: 95%;
+	}
+
+	.club-info-title {
+	margin-bottom: 20px;
+	}
+
+	.club-info-container table tr, td {
+		padding: 10px;
+		font-size: 0.75rem;
+	}
+	
+	.club-info-details {
+		margin-bottom: 20px;
+		font-size: 0.75rem;
+	}
+}

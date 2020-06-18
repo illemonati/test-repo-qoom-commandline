@@ -1,0 +1,82 @@
+<script src="https://js.stripe.com/v3/"></script>
+<section>
+    <div class="header">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="">
+                   <h1 class="page-title">Set up your payment</h1>
+                </div> <!-- page-banner-content -->
+            </div>
+        </div> <!-- row -->
+    </div> <!--  -->
+</section>
+<!--HEADER ENDS-->
+
+<!--====== CHECKOUT PART START ======-->
+
+<section class="checkout-area pb-100">
+	<div class="container">
+		<div class="row">
+	            <div class='col-lg-12'>
+	            	<div class='select-payment-option'>
+	            		<div class="see-price-option-header-container mb-15">
+	    					<h5>Select payment option</h5>
+	    				</div>
+	    				<div class="club-price-option-monthly" id = '{{monthlyId}}'>
+	    					<div class="col-md-6 club-price-option-header">
+	    						<p>Annual Plan, Pay Monthly</p>
+	    					</div>
+	    					<div class="col-md-3 club-price-option-price">
+	    						<p><span class='monthly-payment-price'>$ {{monthlyPrice}}</span></p>
+	    						<span>/ month / member</span>
+	    					</div>
+	    					<div class="col-md-3 light-rounded-buttons select-button">
+	    						<button class="main-btn light-rounded-one sm-btn" type="submit" onclick="">SELECT</button>
+	    					</div>
+	    				</div>
+	    				<div class="club-price-option-annual selected" id = '{{yearlyId}}'>
+	    					<div class="col-md-6 club-price-option-header">
+	    						<p>Annual Plan, Pay Yearly</p>
+	    					</div>
+	    					<div class="col-md-3 club-price-option-price">
+	    						<span class='saving-subtext'>Save 10%</span>
+	    						<span><span class='discounted-pay-in-full-price'>$ {{discountedYearlyPrice}}</span>  <span class='original-pay-in-full-price'>$ {{yearlyPrice}}</span></span>
+	    						<span>/ year / member</span>
+	    					</div>
+	    					<div class="col-md-3 light-rounded-buttons select-button">
+	    						<button class="main-btn light-rounded-one sm-btn" type="submit" onclick="">SELECT<i class="fas fa-check"></i></button>
+	    					</div>
+	    				</div>
+	            	</div>
+	            </div>
+	            
+	            <div class="col-lg-12 order-lg-last">
+	            	<div class="checkout-payment mt-25">
+	                    <div class="checkout-title">
+	                        <h5 class="title">Payment Info</h5>
+	                    </div> <!-- checkout title -->                      
+	            		<div>
+						<form action="/charge" method="post" id="payment-form">
+							<div class="form-row">
+								<label for="card-element">
+								Credit Card
+								</label>
+								<div id="card-element">
+								<!-- A Stripe Element will be inserted here. -->
+								</div>
+								
+								<!-- Used to display Element errors. -->
+								<div id="card-errors" role="alert"></div>
+							</div>
+						
+							<!--<button class='main-btn light-rounded-two'>Submit Payment</button>-->
+							 <div class="checkout-btn light-rounded-buttons">
+	                            <button id='confirmSubscriptionBtn' class="main-btn light-rounded-two" type="submit" disabled>Submit Payment</button>
+	                        </div> <!-- checkout btn -->
+						</form>
+	                </div>
+	            </div>
+	        </div> <!-- row -->
+	</div> <!-- container -->
+	</div>
+</section>
