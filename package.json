@@ -28,7 +28,7 @@
     "jpeg-autorotate": "^5.0.3",
     "jsdom": "^15.2.1",
     "markdown-it": "^8.4.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.7",
     "multer": "^1.4.2",
